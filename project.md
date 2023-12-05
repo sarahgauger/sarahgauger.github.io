@@ -1,6 +1,6 @@
 ## My Project
 
-I applied machine learning techniques to investigate... Below is my report.
+I applied machine learning techniques to investigate the correlation between alchohol consumtion and liver disease in adult men. Below is my report.
 
 ***
 
