@@ -63,7 +63,7 @@ The methodology is not a linear process but an iterative one. As insights are ga
 
 Here is an overview of the dataset, how it was obtained and the preprocessing steps taken, with some plots!
 
-img width="575" alt="ScatterPlot" src="https://github.com/sarahgauger/sarahgauger.github.io/assets/152909821/0b707c88-d06e-49dc-9e2a-a20d42f6ff18"
+![] (img width="575" alt="ScatterPlot" src="https://github.com/sarahgauger/sarahgauger.github.io/assets/152909821/0b707c88-d06e-49dc-9e2a-a20d42f6ff18")
 
 ![](file:///Users/sarahgauger/Desktop/ScatterPlot.png){: width="500" }
 
