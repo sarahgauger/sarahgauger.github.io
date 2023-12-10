@@ -1,6 +1,12 @@
 ## My Project
 
-I applied machine learning techniques to investigate the correlation between alchohol consumtion and liver disease in adult men. Below is my report.
+For my final project, I have applied machine learning techniques to investigate a data set that holds a correlation between blood work that indicates liver disease and the corresponding number of alcoholic drinks consumed per day for each test point. I will compare my findings with the national board of health’s recommendation of drinks per day to see how they compare to the number of drinks per day in the data that indicates a risk for liver disease. I am interested to see if the number of drinks is over or under the national recommendation for a healthy system and liver. Training this model to predict the percentage of adult men at risk for liver diseases will allow us to see how far above or below the nationals official guidelines to how many drinks a day for adult men. The national guideline for alcohol consumption limits intake to 2 drinks per day. The target variable in the dataset represents the number of half-pint equivalents of alcoholic beverages drunk per day for adult men. So, I will use my model to compare the value of these two groups, and make inclinations from the results. 
+
+
+According to the National Center for Drug Abuse Statistics, “10% of Americans over the age of 12 have Alcohol Use Disorder”. They also stated that on average, over 140,000 Americans die yearly from the effects of alcohol. Men have been shown to be at a much higher risk of alcohol abuse than women. This topic has been a long held national conversation, all in efforts to limit alcohol in people’s lives. 
+
+I will be using a data set from the UC Irvine Machine Learning Repository, titled, "Liver Disorders". The data set has 5 varibales with are bloodtest that can indicate liver disorder in a subject. These data points are accompanied with 
+
 
 ***
 
