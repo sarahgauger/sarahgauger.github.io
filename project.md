@@ -1,3 +1,5 @@
+## Final Project 
+
 The primary goal of this project is to leverage machine learning techniques to explore and understand the correlation between blood test indicators of liver disease and the number of alcoholic drinks consumed per day. By establishing this connection, the project aims to investigate the potential risk factors associated with alcohol consumption and their impact on liver health. I am interested to see if the number of drinks found to be correlated to a risk of liver disease, is over or under the national recommendation for a healthy amount. Training this model to predict the percentage of adult men at risk for liver diseases will allow us to see how far above or below the nationals official guidelines to how many drinks a day for adult men. The national guideline for alcohol consumption limits intake to 2 drinks per day. The target variable in the dataset represents the number of half-pint equivalents of alcoholic beverages drunk per day for adult men. So, I will use my model to compare the value of these two groups, and make inclinations from the results. 
 
 
@@ -13,25 +15,23 @@ The threshold for each blood test used is as follows;
 
 A value above or below the levels indicated below, 
 
-MCV > 100 
-	Min = 65
-	Max = 103
+**MCV** > 100 
 
-Alk Phos < 44 indicates liver disorder 
-	Min = 23
-	Max = 138
 
-SGPT > 56
-	Min = 4
-	Max = 155
+**Alkphos** < 44 
 
-SGOT > 50 
-	Min = 5
-	Max = 82
 
-GAMMAGT > 30 
-	Min = 5
-	Max = 297
+
+**SGPT** > 56
+
+
+
+**SGOT** > 50 
+
+
+
+**GAMMAGT** > 30 
+
 
 The core of the project revolves around the application of machine learning techniques to predict the percentage of adult men at risk for liver diseases based on their blood test results and alcohol consumption. By splitting the data into training and testing groups in the model, the project aims to quantify the correlation between these factors and provide a feature for assessing the potential risk associated with varying levels of alcohol intake.
 
@@ -68,7 +68,7 @@ There is some dataset that we can use to help solve this problem. This allows a 
 
 We did this to solve the problem. We concluded that...
 
-## Data
+## Data  
 
 Here is an overview of the dataset, how it was obtained and the preprocessing steps taken, with some plots!
 
