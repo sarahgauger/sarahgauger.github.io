@@ -59,60 +59,68 @@ The methodology is not a linear process but an iterative one. As insights are ga
 
 
 
-## Data  
+## Data and Graphs
 
 Here is an overview of the dataset, how it was obtained and the preprocessing steps taken, with some plots!
+
 
 ![](assets/IMG/ScatterPlot.png) {width="50%" height="50%"}
 
 
-## DATA
+## Scatter Plot 
+I then plotted different scatter plots that compared the test result of one of the bloodests to the drinks count. These scatter plots allowed me to visually display the distribution and relationships between variables, aiding in the identification of patterns and outliers. The linear regression line provides a clear model representation of the data trend, showcasing the predictive relationship between the features and the target variable. With this, adding the mean value line serves as a baseline, which successfully highlights the variance around the average prediction. This visual aid is very helpful for model evaluation, by allowing a quick assessment of how well the model aligns with the central tendency. Additionally, it helps in discerning the efficacy of the machine learning model in capturing meaningful patterns beyond a simple mean-based approach. The combination of these elements creates a deeper understanding of the dataset, and enhances model ability to be meaningfully interpreted.
 
+
+## REC Curve and RMSE Comparison
 
 ![](assets/IMG/Regression.png) {width="50%" height="50%"}
 
 
-### ggg
+Here are my graphs comparing the three prediction models; SVR, Ridge Regression, and Regression Tree.
+
+## REC Curve
 
 ![](assets/IMG/REC.png) {width="50%" height="50%"}
 
-*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
+
 
 ## Modelling
 
 Here are some more details about the machine learning approach, and why this was deemed appropriate for the dataset. 
 
-The model might involve optimizing some quantity. You can include snippets of code if it is helpful to explain things.
+Machine learning techniques are particularly apt for this project due to the intricate relationships within the dataset. Traditional statistical methods may struggle to capture nonlinear patterns and interactions among multiple variables. Machine learning, on the other hand, can process more complex patterns and make predictions based on the data. Because of this, Machine Learning enables the development of a predictive model that can offer further insights into the risk factors associated with impact of alcohol consumption, specifically on your liver.
+
+
+
 
 ```python
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.datasets import make_classification
-X, y = make_classification(n_features=4, random_state=0)
-clf = ExtraTreesClassifier(n_estimators=100, random_state=0)
-clf.fit(X, y)
-clf.predict([[0, 0, 0, 0]])
-```
+pipe = Pipeline([('scaler', StandardScaler()), ('lr', Ridge(alpha=1.0))])
+pipe.fit(X_train, y_train)
+y_pred_lr = pipe.predict(X_test)
 
-This is how the method was developed.
+RMSE = np.sqrt(np.mean((y_test-y_pred_lr)**2))
+```
+In this how I used the Pipline short cut to scale my data.  
 
 ## Results
 
-Figure X shows... [description of Figure X].
-
-## Discussion
-
-From Figure X, one can see that... [interpretation of Figure X].
 
 ## Conclusion
 
-Here is a brief summary. From this work, the following conclusions can be made:
-* first conclusion
-* second conclusion
+In conclusion, this project leveraged machine learning techniques to explore the intricate relationships between blood test indicators of liver disease and daily alcohol consumption among adult men.Through processing, feature selection, and the application of regression models such as Support Vector Regression (SVR), Ridge Regression, and Regression Tree, the project aimed to predict the percentage of adult men at risk for liver diseases. The evaluation of model predictions against national alcohol consumption guidelines are supposed to reveal insights into deviations from recognized benchmarks for a healthy lifestyle. Scatter plots with linear regression and mean value lines facilitated a nuanced interpretation of predictive relationships. This endeavor can contribute to the broader understanding of alcohol-related health issues within the public, which is why this data is very important. 
 
-Here is how this work could be developed further in a future project.
+The first conclusion I can make is that 
+
+
 
 ## References
 [1] DALL-E 3
+
+https://www.niaaa.nih.gov/alcohol-health/overview-alcohol-consumption/moderate-binge-drinking
+
+https://drugabusestatistics.org/alcohol-abuse-statistics/
+
+https://archive.ics.uci.edu/
 
 [back](./)
 
