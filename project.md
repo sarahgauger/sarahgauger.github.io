@@ -58,15 +58,6 @@ To assess the model's accuracy and generalization capabilities, evaluation metri
 The methodology is not a linear process but an iterative one. As insights are gained from the initial models, the project may involve refining its features, adjusting  various parameters and thresholds created, or exploring alternative models to enhance the effectiveness of the predictions and the ability to interpret them in a meaningful way.
 
 
-***
-
-## Introduction 
-
-Here is a summary description of the topic. Here is the problem. This is why the problem is important.
-
-There is some dataset that we can use to help solve this problem. This allows a machine learning approach. This is how I will solve the problem using supervised/unsupervised/reinforcement/etc. machine learning.
-
-We did this to solve the problem. We concluded that...
 
 ## Data  
 
